@@ -25,7 +25,11 @@ SECRET_KEY = 'zhnjvls15s#qq!8(r#q64&m%u(7tza#(_a%1uld-_kturc6(y0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'test.test',
+    'btre.test',
+]
 
 
 # Application definition
@@ -127,3 +131,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'btre/static')
 ]
+
+
+# Media Files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
