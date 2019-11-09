@@ -8,6 +8,10 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12">
+
+                {% comment %} START: ALERTS {% endcomment %}
+                {% include 'partials/_alerts.html' %}
+                {% comment %} END: ALERTS {% endcomment %}
                 <h1 class="display-4">{{listing.title}}</h1>
                 <p class="lead"> <i class="fas fa-map-marker"></i> {{listing.city}} {{listing.state}}, {{listing.zipcode}}</p> </div>
             </div>
